@@ -21,7 +21,9 @@ public class DriveCommand extends Command {
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
 	    if (Robot.oi.getDriver().getRawAxis(2) > 0.25 || Robot.oi.getDriver().getRawAxis(3) > 0.25)
-	    	// 0.77459666924 = sqrt(6)
+	    	// 0.77459666924 = sqrt(0.6)
+		    //also where's the fucking quadratic drive
+		    //i see no square term
 	    	Robot.driveSubsystem.getRobotDrive().tankDrive(Robot.oi.getDriver().getRawAxis(5) * 0.77459666924, Robot.oi.getDriver().getRawAxis(1) * 0.77459666924, true);
     	else
 	    	Robot.driveSubsystem.getRobotDrive().tankDrive(Robot.oi.getDriver().getRawAxis(5), Robot.oi.getDriver().getRawAxis(1), true);
