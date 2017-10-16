@@ -33,7 +33,7 @@ public class GearCommand extends Command {
     		Robot.gearSubsystem.getIntakeMotor().set(0.75);
     	else if (Robot.oi.getOperator().getRawButton(12))
     		Robot.gearSubsystem.getIntakeMotor().set(0);
-    	else if (Robot.oi.getOperator().getRawButton(10))
+    	else if (Robot.oi.getOperator().getRawButton(11)) //changed to 11 so it's more ergonomic
     		Robot.gearSubsystem.getIntakeMotor().set(-0.75);
     }
 
